@@ -1,0 +1,18 @@
+{
+    "layers": {
+        "bikeability": {
+            "minzoom": 0,
+            "maxzoom": 14
+        }
+    },
+    "settings": {
+        "minzoom": 0,
+        "maxzoom": 14,
+        "basezoom": 14,
+        "include_ids": true,
+        "compress": "gzip",
+        "name": "Bicycle Safety Data",
+        "version": "0.1",
+        "description": "Tiles for bicycle safety visualization through class:bicycle"
+    }
+}
