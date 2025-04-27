@@ -13,42 +13,42 @@ function way_function()
     end
 
     if Holds("class:bicycle") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle")))
+        Attribute("class:bicycle", Find("class:bicycle"))
         return
     end
 
     if Holds("class:bicycle:mtb") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:mtb")))
+        Attribute("class:bicycle", Find("class:bicycle:mtb"))
         return
     end
 
     if Holds("class:bicycle:technical") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:technical")))
+        Attribute("class:bicycle", Find("class:bicycle:technical"))
         return
     end
 
     if Holds("class:bicycle:commute") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:commute")))
+        Attribute("class:bicycle", Find("class:bicycle:commute"))
         return
     end
 
     if Holds("class:bicycle:touring") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:touring")))
+        Attribute("class:bicycle", Find("class:bicycle:touring"))
         return
     end
 
     if Holds("class:bicycle:roadcycling") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:roadcycling")))
+        Attribute("class:bicycle", Find("class:bicycle:roadcycling"))
         return
     end
 
     if Holds("class:bicycle:trailer") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:trailer")))
+        Attribute("class:bicycle", Find("class:bicycle:trailer"))
         return
     end
 
     if Holds("class:bicycle:non_experienced") then
-        Attribute("class:bicycle", tonumber(Find("class:bicycle:non_experienced")))
+        Attribute("class:bicycle", Find("class:bicycle:non_experienced"))
         return
     end
 
