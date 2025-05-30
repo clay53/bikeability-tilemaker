@@ -92,14 +92,14 @@ function way_function()
         then
             Attribute("class:bicycle", 2)
         elseif
-            highway == "secondary"
-            or highway == "secondary_link"
-            or highway == "tertiary"
+            highway == "tertiary"
             or highway == "tertiary_link"
         then
             Attribute("class:bicycle", 1)
         elseif
-            highway == "primary"
+            highway == "secondary"
+            or highway == "secondary_link"
+            or highway == "primary"
             or highway == "primary_link"
         then
             Attribute("class:bicycle", -1)
@@ -178,8 +178,6 @@ function way_function()
     if
         highway == "tertiary"
         or highway == "tertiary_link"
-        or highway == "secondary"
-        or highway == "secondary_link"
     then
         if verge ~= "" and verge ~= "no" then
             Attribute("class:bicycle", 1)
@@ -192,6 +190,8 @@ function way_function()
     if
         highway == "primary"
         or highway == "primary_link"
+        or highway == "secondary"
+        or highway == "secondary_link"
     then
         if verge ~= "" and verge ~= "no" then
             Attribute("class:bicycle", -1)
