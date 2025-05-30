@@ -123,7 +123,10 @@ function way_function()
         return
     end
 
-    if highway == "path" then
+    if
+        highway == "path"
+        or highway == "track"
+    then
         if
             Find("bicycle") == "yes"
             or Find("bicycle") == "designated"
@@ -140,23 +143,24 @@ function way_function()
         return
     end
 
-    if
-        highway == "service"
-        or highway == "track"
-    then
-        Attribute("class:bicycle", 1)
-        return
-    end
-
-    if
-        highway == "unclassified"
-    then
-        Attribute("class:bicycle", 1)
-        return
-    end
-
     local verge = Find("verge")
     local lanes = Find("lanes")
+
+    if
+        highway == "service"
+        or highway == "unclassified"
+    then
+        if
+            (verge ~= "" and verge ~= "no")
+            or lanes == "1"
+        then
+            Attribute("class:bicycle", 2)
+        else
+            Attribute("class:bicycle", 1)
+        end
+        return
+    end
+
     if
         highway == "residential"
     then
