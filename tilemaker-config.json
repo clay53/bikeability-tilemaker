@@ -9,7 +9,7 @@
         "minzoom": 0,
         "maxzoom": 14,
         "basezoom": 14,
-        "include_ids": false,
+        "include_ids": true,
         "compress": "gzip",
         "name": "Bicycle Safety Data",
         "version": "0.1",
