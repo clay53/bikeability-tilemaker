@@ -126,6 +126,7 @@ function way_function()
     if
         highway == "path"
         or highway == "track"
+        or highway == "bridleway"
     then
         if
             Find("bicycle") == "yes"
